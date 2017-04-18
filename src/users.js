@@ -5,7 +5,7 @@ import 'fetch';
 @inject(HttpClient)
 export class Users {
   heading = 'Github Users';
-  users = [];
+  user = {};
 
   constructor(http) {
     http.configure(config => {
@@ -18,8 +18,8 @@ export class Users {
   }
 
   activate() {
-    return this.http.fetch('users')
+    return this.http.fetch('users/russeru')
       .then(response => response.json())
-      .then(users => this.users = users);
+      .then(user => this.user = user);
   }
 }
