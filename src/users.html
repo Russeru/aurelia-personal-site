@@ -3,14 +3,28 @@
   
   <section class="au-animate">
     <h2>${heading}</h2>
-    <div class="card">
+    <div class="card card-primary">
       <canvas class="header-bg" width="250" height="70" blur-image.bind="image"></canvas>
       <div class="avatar">
         <img src.bind="user.avatar_url" crossorigin ref="image"/>
       </div>
       <div class="content">
         <p class="name">${user.login}</p>
-        <p><a target="_blank" class="btn btn-default" href.bind="user.html_url">Contact</a></p>
+        <p><a target="_blank" class="btn btn-secondary" href.bind="user.html_url">Contact</a></p>
+      </div>
+    </div>
+    <div class="card-deck">
+      <div class="card card-info" repeat.for="repo of repos"><a target="_blank" href.bind="repo.html_url">
+        <canvas class="header-bg" width="250" height="30"></canvas>
+        <div class="content">
+          <div class="card-block">
+            <p class="name">${repo.name}</p>
+          </div>
+          <div class="card-block">
+            <p class="card-subtitle">${repo.description}</p>
+          </div>
+        </div>
+      </a>
       </div>
     </div>
   </section>

@@ -4,8 +4,9 @@ import 'fetch';
 
 @inject(HttpClient)
 export class Users {
-  heading = 'Github Users';
+  heading = 'Projects';
   user = {};
+  repos = [];
 
   constructor(http) {
     http.configure(config => {
@@ -18,8 +19,12 @@ export class Users {
   }
 
   activate() {
+    this.http.fetch('users/russeru/repos')
+      .then(response => response.json())
+      .then(repos => this.repos = repos)
     return this.http.fetch('users/russeru')
       .then(response => response.json())
-      .then(user => this.user = user);
+      .then(user => this.user = user)
+      .then(response => console.log(response))
   }
 }
