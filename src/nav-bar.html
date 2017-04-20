@@ -1,22 +1,20 @@
 <template bindable="router">
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
+    <div class="collapse navbar-collapse">
       <a class="navbar-brand" href="#">
         <i class="fa fa-home"></i>
         <span>${router.title}</span>
       </a>
-
-    <div class="collapse navbar-collapse" id="skeleton-navigation-navbar-collapse">
       <ul class="navbar-nav">
         <li repeat.for="row of router.navigation" class="nav-item nav-link ${row.isActive ? 'active' : ''}">
           <a href.bind="row.href">${row.title}</a>
         </li>
       </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="loader" if.bind="router.isNavigating">
-          <i class="fa fa-spinner fa-spin fa-2x"></i>
-        </li>
-      </ul>
     </div>
+    <ul class="nav navbar-nav">
+      <li class="loader" if.bind="router.isNavigating">
+        <i class="fa fa-spinner fa-spin fa-2x"></i>
+      </li>
+    </ul>
   </nav>
 </template>

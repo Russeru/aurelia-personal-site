@@ -1,5 +1,15 @@
 body {
-  margin: 0;
+  margin: 100;
+}
+
+.navbar.navbar-toggleable-md {
+  margin-bottom: 20px;
+}
+
+#hey {
+  background: rgba(55, 110, 200, 0.3);
+  padding: 2rem 1rem;
+  /*margin: 20px;*/
 }
 
 .splash {
@@ -24,7 +34,7 @@ body {
 }
 
 .page-host {
-  position: absolute;
+  position: inherit;
   left: 0;
   right: 0;
   top: 50px;
@@ -50,7 +60,7 @@ section {
 }
 
 .navbar-nav li.loader {
-  margin: 12px 24px 0 6px;
+  /*margin: 12px 24px 0 6px;*/
 }
 
 .pictureDetail {
