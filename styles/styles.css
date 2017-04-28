@@ -90,17 +90,72 @@ div.au-stagger {
   animation: fadeIn 2s;
 }
 
-.card {
+/*.card-deck .card {
   overflow: hidden;
   position: relative;
   border: 1px solid #CCC;
   border-radius: 8px;
   text-align: center;
-  padding: 0;
+  padding: 15px;
   background-color: #337ab7;
   color: rgb(136, 172, 217);
   margin-bottom: 32px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  width: 50px;
+}*/
+#custom-card {
+  padding: 15px;
+  margin: 30px;
+  max-width: 350px;
+}
+
+.card-deck .card-primary {
+  background-color: #006992;
+}
+.card-deck .card-primary:hover {
+  background-color: #005678;
+}
+
+.card-deck .card-secondary {
+  background-color: #3DA5D9;
+}
+.card-deck .card-secondary:hover {
+  background-color: #3288B2;
+}
+
+.card-deck .card-success {
+  background-color: #04CEC1;
+}
+.card-deck .card-success:hover {
+  background-color: #04A99E;
+}
+
+
+.btn-primary {
+  background-color: #006992 !important;
+  border: #006992 !important;
+}
+.btn-primary:hover {
+  background-color: #005678 !important;
+  border: #006992 !important;
+}
+
+.btn-secondary {
+  background-color: #3DA5D9 !important;
+  color: #fff !important;
+  border: #3DA5D9 !important;
+}
+.btn-secondary:hover {
+  background-color: #3288B2 !important;
+  color: #fff !important;
+  border: #3DA5D9 !important;
+}
+
+.btn-success {
+  background-color: #04CEC1 !important;
+}
+.btn-success:hover {
+  background-color: #04A99E !important;
 }
 
 .card .content {

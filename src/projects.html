@@ -1,25 +1,76 @@
 <template>
   <require from="blur-image"></require>
+  <!-- <require from="../styles/home.css"></require> -->
   <require from="../styles/projects.css"></require>
   
   <section class="au-animate">
     <!-- <h2>${heading}</h2> -->
     <div id="section-wrapper-projects">
-      <div class="card card-primary w-25 mx-auto">
+      <!-- <div class="card card-primary w-25 mx-auto">
         <canvas class="header-bg" width="250" height="70" blur-image.bind="image"></canvas>
         <div class="avatar">
           <img src.bind="user.avatar_url" crossorigin ref="image"/>
         </div>
         <div class="content">
           <p class="name">${user.login}</p>
-          <p><a target="_blank" class="btn btn-secondary" href.bind="user.html_url">Contact</a></p>
+          <p><a target="_blank" class="btn btn-secondary" href.bind="user.html_url">Github</a></p>
         </div>
-      </div>
+      </div> -->
+      <h2>Projects</h2>
+      
       <div class="card-deck">
-        <div class="card card-info" repeat.for="repo of repos"><a target="_blank" href.bind="repo.html_url">
+        <div class="card-primary mx-auto" id="custom-card">
+          <a target="_blank" href='https://github.com/Russeru/aurelia-personal-site'>
+            <!-- <canvas class="header-bg" width="250" height="30"></canvas> -->
+            <div class="content">
+              <div class="card-header" id="card-top">
+                <p class="name">This site!</p>
+              </div>
+              <div class="card-block">
+                <p class="card-subtitle">Personal site made with Aurelia and Bootstrap 4.</p>
+              </div>
+              <div class="card-block">
+                <p class="card-subtitle">JavaScript, HTML, CSS</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card-primary mx-auto" id="custom-card">
+          <!-- <a target="_blank" href='https://github.com/Russeru/aurelia-personal-site'> -->
+            <!-- <canvas class="header-bg" width="250" height="30"></canvas> -->
+            <div class="content">
+              <div class="card-header" id="card-top">
+                <p class="name">VR Robot</p>
+              </div>
+              <div class="card-block">
+                <p class="card-subtitle">Senior Capstone project where I helped create an assistant robot controllable with a VR headset.</p>
+              </div>
+              <div class="card-block">
+                <p class="card-subtitle">Python</p>
+              </div>
+            </div>
+          <!-- </a> -->
+        </div>
+        <div class="card-primary mx-auto" id="custom-card">
+          <a target="_blank" href='http://steamcommunity.com/sharedfiles/filedetails/?id=407739462'>
+            <!-- <canvas class="header-bg" width="250" height="30"></canvas> -->
+            <div class="content">
+              <div class="card-header" id="card-top">
+                <p class="name">Civilization: Beyond Earth Mod</p>
+              </div>
+              <div class="card-block">
+                <p class="card-subtitle">Videogame mod which replaced quotes in the game with those from an earlier game in the series.</p>
+              </div>
+              <div class="card-block">
+                <p class="card-subtitle">XML, SQL</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- <div class="card card-primary" repeat.for="repo of repos"><a target="_blank" href.bind="repo.html_url">
           <canvas class="header-bg" width="250" height="30"></canvas>
           <div class="content">
-            <div class="card-block">
+            <div class="card-block" id="card-top">
               <p class="name">${repo.name}</p>
             </div>
             <div class="card-block">
@@ -27,7 +78,7 @@
             </div>
           </div>
         </a>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
