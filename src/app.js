@@ -1,10 +1,10 @@
 export class App {
   configureRouter(config, router) {
-    // config.title = 'Aurelia';
+    config.title = 'Russell Walker';
     config.map([
       { route: ['', 'home'], name: 'home',      moduleId: 'home',      nav: true, title: 'Home' },
-      { route: 'projects',        name: 'projects',        moduleId: 'projects',        nav: true, title: 'Projects' }
-      // { route: 'child-router',  name: 'child-router', moduleId: 'child-router', nav: true, title: 'Child Router' }
+      { route: 'projects',        name: 'projects',        moduleId: 'projects',        nav: true, title: 'Projects' },
+      { route: 'resume', name: 'resume', moduleId: 'resume', nav: true, title: 'Resume'}
     ]);
 
     this.router = router;
