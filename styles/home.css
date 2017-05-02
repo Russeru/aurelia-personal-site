@@ -53,7 +53,7 @@ body {
 }
 .site-wrapper-inner {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .cover-container {
   margin-right: auto;
@@ -160,7 +160,7 @@ body {
 
 @media (min-width: 62em) {
   .masthead,
-  .mastfoot,
+  /*.mastfoot,*/
   .cover-container {
     width: 42rem;
   }
