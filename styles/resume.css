@@ -1,3 +1,9 @@
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
 html,
 body {
   height: 100%;
@@ -14,4 +20,5 @@ body {
 #section-wrapper-resume {
   text-align: left;
   padding-top: 100px;
+  font-family: "Gill Sans", sans-serif;
 }
