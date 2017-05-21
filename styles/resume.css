@@ -22,3 +22,14 @@ body {
   padding-top: 100px;
   font-family: "Gill Sans", sans-serif;
 }
+
+#experience {
+  float: left;
+  margin-left: 50px;
+  width: 750px;
+}
+
+#logos {
+  float: right;
+  width: 400px;
+}

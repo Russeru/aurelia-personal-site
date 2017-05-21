@@ -4,7 +4,7 @@ export class App {
     config.map([
       { route: ['', 'home'], name: 'home',      moduleId: 'home',      nav: true, title: 'Home' },
       { route: 'projects',        name: 'projects',        moduleId: 'projects',        nav: true, title: 'Projects' },
-      { route: 'resume', name: 'resume', moduleId: 'resume', nav: true, title: 'Resume'},
+      { route: 'experience', name: 'experience', moduleId: 'experience', nav: true, title: 'Experience'},
       { route: 'contact', name: 'contact', moduleId: 'contact', nav: true, title: 'Contact'}
     ]);
 
