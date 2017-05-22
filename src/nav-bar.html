@@ -1,47 +1,35 @@
 <template bindable="router">
   <require from="../styles/navbar-top-fixed.css"></require>
-  <!-- <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
-    <div class="collapse navbar-collapse">
-      <a class="navbar-brand" href="#">
-        <i class="fa fa-home"></i>
-        <span>${router.title}</span>
-      </a>
-      <ul class="navbar-nav">
-        <li repeat.for="row of router.navigation" class="nav-item nav-link ${row.isActive ? 'active' : ''}">
-          <a href.bind="row.href">${row.title}</a>
-        </li>
-      </ul>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="loader" if.bind="router.isNavigating">
-        <i class="fa fa-spinner fa-spin fa-2x"></i>
-      </li>
-    </ul>
-  </nav> -->
-  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse nav-pills">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- <a class="navbar-brand" href="#">Fixed navbar</a> -->
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li repeat.for="row of router.navigation" class="nav-item nav-link ${row.isActive ? 'active' : ''}">
           <a href.bind="row.href">${row.title}</a>
         </li>
-        <!-- <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li> -->
       </ul>
-      <!-- <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
+      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">
+        Contact
+      </button>
     </div>
+    
   </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="card-primary" id="contactCard">
+        <img class="card-img-top" src="me.jpg" id="cardImage">
+        <div class="card-block">
+          <h4 class="card-title">Russell Walker</h4>
+          <p class="card-text"><a href="mailto:russwalker21@gmail.com">russwalker21@gmail.com</a><br />856-512-0694</p>
+          <a href="https://www.linkedin.com/in/russ-walker/" class="btn btn-secondary" id="linkedin"> LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+</a>
+          <a href="https://angel.co/russell-walker-3" class="btn btn-success"> AngelList <i class="fa fa-angellist" aria-hidden="true"></i>
+</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
