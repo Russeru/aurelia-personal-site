@@ -54,6 +54,7 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: middle;
+  animation: fadeIn 1s;
 }
 .cover-container {
   margin-right: auto;

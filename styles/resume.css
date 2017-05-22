@@ -27,9 +27,20 @@ body {
   float: left;
   margin-left: 50px;
   width: 750px;
+  animation: fadeInLeft 1s;
 }
 
 #logos {
-  float: right;
-  width: 400px;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  #logos {
+    float: right;
+    text-align: right;
+    width: 350px;
+    margin-right: 50px;
+    display: block;
+    animation: fadeInRight 1s;
+  }
 }

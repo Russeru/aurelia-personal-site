@@ -9,22 +9,22 @@ export class Projects {
   repos = [];
 
   constructor(http) {
-    http.configure(config => {
-      config
-        .useStandardConfiguration()
-        .withBaseUrl('https://api.github.com/');
-    });
-
-    this.http = http;
+    // http.configure(config => {
+    //   config
+    //     .useStandardConfiguration()
+    //     .withBaseUrl('https://api.github.com/');
+    // });
+    // 
+    // this.http = http;
   }
 
   activate() {
-    this.http.fetch('users/russeru/repos')
-      .then(response => response.json())
-      .then(repos => this.repos = repos)
-    return this.http.fetch('users/russeru')
-      .then(response => response.json())
-      .then(user => this.user = user)
-      .then(response => console.log(response))
+    // this.http.fetch('users/russeru/repos')
+    //   .then(response => response.json())
+    //   .then(repos => this.repos = repos)
+    // return this.http.fetch('users/russeru')
+    //   .then(response => response.json())
+    //   .then(user => this.user = user)
+    //   .then(response => console.log(response))
   }
 }
