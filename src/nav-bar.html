@@ -1,4 +1,5 @@
 <template bindable="router">
+  <require from="./nav-bar"></require>
   <require from="../styles/navbar-top-fixed.css"></require>
   <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse nav-pills">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -6,16 +7,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-        <li repeat.for="row of router.navigation" class="nav-item nav-link ${row.isActive ? 'active' : ''}">
+        <li repeat.for="row of router.navigation" click.delegate="toggle(row)" class="nav-item nav-link ${row.isActive ? 'active' : ''}">
           <a href.bind="row.href">${row.title}</a>
         </li>
       </ul>
-      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">
-        Contact
-      </button>
+      <button type="button" class="btn btn-secondary" click.delegate="toggle(null)" data-toggle="modal" data-target="#myModal">Contact</button>
     </div>
-    
   </nav>
+  
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -24,12 +23,11 @@
         <div class="card-block">
           <h4 class="card-title">Russell Walker</h4>
           <p class="card-text"><a href="mailto:russwalker21@gmail.com">russwalker21@gmail.com</a><br />856-512-0694</p>
-          <a href="https://www.linkedin.com/in/russ-walker/" class="btn btn-secondary" id="linkedin"> LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-</a>
-          <a href="https://angel.co/russell-walker-3" class="btn btn-success"> AngelList <i class="fa fa-angellist" aria-hidden="true"></i>
-</a>
+          <a href="https://www.linkedin.com/in/russ-walker/" class="btn btn-secondary" id="linkedin"> LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="https://angel.co/russell-walker-3" class="btn btn-success"> AngelList <i class="fa fa-angellist" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
   </div>
+  
 </template>
