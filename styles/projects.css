@@ -8,7 +8,7 @@ body {
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
   min-height: 100%;
-  padding-top: 0rem;
+  /*padding-top: 0rem;*/
 }
 
 a,
@@ -19,7 +19,7 @@ a:hover {
 
 #section-wrapper-projects {
   animation: fadeIn 1s;
-  padding-top: 100px;
+  padding-top: 35px;
 }
 
 /*.card-deck .card-primary .header-bg {

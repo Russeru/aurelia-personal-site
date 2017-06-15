@@ -1,11 +1,16 @@
 /* Show it is fixed to the top */
 body {
-  min-height: 75rem;
-  padding-top: 4.5rem;
+  /*min-height: 75rem;*/
+  /*padding-top: 4.5rem;*/
+  padding-top: 56px;
 }
 
 .modal-dialog {
   margin: 15%;
+}
+
+#contact-button {
+  font-family: inherit;
 }
 
 #linkedin {

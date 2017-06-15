@@ -14,12 +14,12 @@ body {
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
   min-height: 100%;
-  padding-top: 0rem;
+  /*padding-top: 0rem;*/
 }
 
 #section-wrapper-resume {
   text-align: left;
-  padding-top: 100px;
+  padding-top: 35px;
   font-family: "Gill Sans", sans-serif;
 }
 

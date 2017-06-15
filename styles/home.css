@@ -2,12 +2,13 @@
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
+ /* Links */
+ a,
+ a:focus,
+ a:hover {
+   color: #fff;
+ }
+
 
 /* Custom default button */
 /*.btn-secondary,
@@ -24,18 +25,7 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
-  height: 100%;
-  background-color: #233435;
-}
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-  min-height: 100%;
-  padding-top: 0rem;
-}
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
